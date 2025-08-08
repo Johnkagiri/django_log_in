@@ -12,6 +12,7 @@ WORKDIR /django_log_in
 # Install dependencies
 COPY ./requirements.txt .
 RUN pip install -r requirements.txt
+RUN pip install psycopg2-binary
 
 # Copy project
 COPY . .
